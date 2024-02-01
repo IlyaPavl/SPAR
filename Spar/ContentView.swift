@@ -10,12 +10,18 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            NavigationBlock()
+            ScrollView([.vertical]) {
+                VStack {
+                    ItemView()
+                        .padding(.bottom, 10)
+                    DescriptionView()
+                    FeedbackView()
+                }
+                .padding(.top, 6.0)
+            }
+            PriceBlock()
         }
-        .padding()
     }
 }
 
