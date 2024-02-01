@@ -24,7 +24,6 @@ struct NavigationBlock: View {
             .padding([.leading, .trailing])
         }
         Divider()
-            .padding(.top, -10)
     }
 
     private func iconImage(systemName: String, width: CGFloat, height: CGFloat) -> some View {

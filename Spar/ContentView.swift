@@ -11,14 +11,14 @@ struct ContentView: View {
     var body: some View {
         VStack {
             NavigationBlock()
-            ScrollView([.vertical]) {
+            ScrollView {
                 VStack {
                     ItemView()
                         .padding(.bottom, 10)
                     DescriptionView()
                     FeedbackView()
                 }
-                .padding(.top, 6.0)
+                .padding(.top, 7)
             }
             PriceBlock()
         }

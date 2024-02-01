@@ -39,12 +39,6 @@ struct MainTabView: View {
     }
 }
 
-struct HomeView: View {
-    var body: some View {
-        Text("Главная")
-    }
-}
-
 struct CatalogView: View {
     var body: some View {
         Text("Здесь будет каталог продуктов")
